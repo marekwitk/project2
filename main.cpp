@@ -398,7 +398,7 @@ int main() {
         }
         if (wygrana) {
             wyczysc_ekran();
-            cout << "Gratulacje Kocie, wygrałeś!" << endl;
+            cout << "🎉 Gratulacje! Wygrałeś grę FreeCell! 🎉" << endl;
             break;
         }
     }
