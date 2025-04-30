@@ -50,12 +50,14 @@ int main() {
             historia.pop_back();
         }
 
-        bool wygrana = true;
+    bool wygrana = true;
         for (int i = 0; i < 4; ++i) {
-            if (pola_docelowe[i] != 12 + 13 * i) {
-                wygrana = false;
-                break;
-            }
+                int karta = pola_docelowe[i];
+                if (karta==-1 || karta% 13 !=12)
+                {
+                    wygrana= false;
+                    break;
+                }
         }
         if (wygrana) {
             wyczysc_ekran();
